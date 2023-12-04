@@ -257,36 +257,456 @@
 // }
 // console.log(`nariu viresniu nei 66 yra: ${count}`);
 
-const leFamily = {
-  me: 33,
-  father: 55,
-  mother: 53,
-  sister: 32,
-  brother1: 28,
-  brother2: 25,
-  aunt: 61,
-  uncle: 60,
-  cousin1: 37,
-  cousin2: 37,
-  grandfather1: 79,
-  grandmother1: 77,
-  grandfather2: 81,
-  grandmother2: 80,
-  cat: 3,
-  dog: 7,
-  parrot: 2,
-};
+// const leFamily = {
+//   me: 33,
+//   father: 55,
+//   mother: 53,
+//   sister: 32,
+//   brother1: 28,
+//   brother2: 25,
+//   aunt: 61,
+//   uncle: 60,
+//   cousin1: 37,
+//   cousin2: 37,
+//   grandfather1: 79,
+//   grandmother1: 77,
+//   grandfather2: 81,
+//   grandmother2: 80,
+//   cat: 3,
+//   dog: 7,
+//   parrot: 2,
+// };
 
-
-for (let key in leFamily) {
-  if (leFamily[key] % 2 === 0) {
-    console.log(`${key} yra lyginis.`);
-  } else {
-    console.log(`${key} yra nelyginis.`);
-  }
-}
+// for (let key in leFamily) {
+//   if (leFamily[key] % 2 === 0) {
+//     console.log(`${key} yra lyginis.`);
+//   } else {
+//     console.log(`${key} yra nelyginis.`);
+//   }
+// }
 // if else pakeistas i ternary operatoriu!!
 // for (let key in leFamily) {
 //   const message = leFamily[key] % 2 === 0 ? `${key} has an even value.` : `${key} has an odd value.`;
 //   console.log(message);
 // }
+
+"use strict";
+// const tekstas = "Tautvydas kreivys ";
+// const str = "Petras petraitis";
+// const together = tekstas.concat(str);
+// console.log(together);
+
+// let text1 = "       Laba diena           ";
+// let text2 = "Kaip Sekasi ";
+// let text3 = "Ka dabar daryti";
+
+// let concatenatedText = text1.concat(text2, text3).charAt(5);
+// console.log(concatenatedText);
+
+// let concatenatedText = text1.endsWith("");
+// console.log(concatenatedText);
+
+// let concatenatedText = text1.indexOf("Laba");
+// console.log(concatenatedText);
+
+// let concatenatedText = text1.length;
+// console.log(concatenatedText);
+
+// let concatenatedText = text1.match("diena");
+// console.log(concatenatedText);
+
+// let concatenatedText = text1.repeat("3");
+// console.log(concatenatedText);
+
+// let concatenatedText = text1.replace("diena", "ryteli");
+// console.log(concatenatedText);
+
+// let concatenatedText = text1.search("na");
+// console.log(concatenatedText);
+
+// let concatenatedText = text1.slice(3, 6);
+// console.log(concatenatedText);
+
+// let concatenatedText = text1.split(" ");
+// console.log(concatenatedText);
+
+// let concatenatedText = text1.substring(5, 9);
+// console.log(concatenatedText);
+// let concatedText = text1.substring(5, 9);
+// let toUpper = text1.charAt(5).toUpperCase();
+// let subs = text1.substring(6, 10);
+// let concated = toUpper.concat(subs);
+// let text = text1.replace("diena", concated);
+// let changed = text1.replace("d", "D");
+// console.log(concatedText);
+// console.log(toUpper);
+// console.log(subs);
+// console.log(concated);
+// console.log(text);
+// console.log(changed);
+
+// let concatenatedText = text1.trim();
+// console.log(concatenatedText);
+
+// let x = 5;
+// console.log(++x);
+// let xc = 5;
+// console.log(xc++);
+// let xv = 5;
+// console.log(--xv);
+// let xb = 5;
+// console.log(xb--);
+
+// let str = "Tautvydas Kreivys";
+// str = "Kristupas Kolumbas";
+// console.log(str);
+
+// let nr = 5;
+// console.log(nr);
+// console.log(++nr);
+// console.log(++nr);
+
+// let mNr = 5;
+// console.log(mNr);
+// console.log(--mNr);
+// console.log(--mNr);
+// console.log(--mNr);
+
+// let sNr = "12";
+// console.log(typeof sNr);
+// console.log(typeof Number(sNr));
+// console.log(typeof parseInt(sNr, 10));
+// console.log(typeof parseFloat(sNr));
+
+// let dNr = 12;
+// let sk = 10 * dNr;
+// console.log(sk);
+
+// let tomasWeight = 90;
+// let tomasHeight = 1.77;
+// let tomasKmi = tomasWeight / tomasHeight ** 2;
+// console.log(tomasKmi);
+
+// let tadasWeight = 40;
+// let tadasHeight = 2.25;
+// let tadasKmi = tadasWeight / tadasHeight ** 2;
+// console.log(tadasKmi);
+
+// let a = 8;
+// let b = 6;
+// let c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+// console.log(c);
+
+// let cel = 20;
+// let far = (9 / 5) * cel + 32;
+// console.log(far);
+
+// const skaiciai = [2, 34, 54, 67, 77, 1, 99];
+// let suma = 0;
+// for (let i of skaiciai) {
+//   console.log(i);
+//   suma += i;
+// }
+// console.log(suma);
+
+// const zodynas = [`Geros`, `dienytes`, `skanios`, ` kavytes`];
+// for (let i of zodynas) {
+//   let kiek = 0;
+//   for (let a of i) {
+//     kiek++;
+//   }
+//   console.log(`${i} = ${kiek}, ${i.length}`);
+// }
+
+// let i = 1,
+//   n = 10;
+// while (i <= n) {
+//   console.log(i);
+//   i += 1;
+// }
+
+// let skaiciuss = 11;
+// while (skaiciuss > 0) {
+//   skaiciuss--;
+//   console.log(skaiciuss);
+// }
+
+// let skaicius = 0;
+// while (skaicius < 11) {
+//   if (skaicius % 2 !== 0) {
+//     console.log(skaicius);
+//   }
+//   skaicius += 1;
+// }
+
+// let age = 17;
+
+// do {
+//   console.log(age);
+//   age += 1;
+// } while (age < 20);
+
+// let suma = 0;
+// do {
+//   const sk = prompt(`Iveskite skaiciu priimsiu betkoki isskyrus neigiama:... `);
+//   if (sk > 0) {
+//     suma = +parseInt(sk);
+//   }
+// } while (sk > 0);
+// console.log(`Suma: ${suma}`);
+
+// let suma = 0;
+
+// let suma = 0;
+// let count = 0;
+// let sk;
+
+// do {
+//   sk = prompt(`Iveskite skaiciu priimsiu betkoki isskyrus neigiama: `);
+
+//   if (sk > 0) {
+//     suma += parseInt(sk);
+//     count++;
+//   }
+
+// } while (sk > 0);
+
+// if (count > 0) {
+//   const average = suma / count;
+//   console.log(`Suma: ${suma}`);
+//   console.log(`Vidurkis: ${average}`);
+// } else {
+//   console.log('Nera ivestu teigiamu skaiciu.');
+// }
+
+// function zaidimas() {
+//   let kartot, n, sk, spejimai, spejimas;
+
+//   do {
+//     n = parseInt(prompt("Iveskite maksimalu skaiciu n: "));
+
+//     if (n <= 0 || isNaN(n)) {
+//       console.log("Ivestas netinkamas skaicius, iveskite nauja: ");
+//       continue;
+//     }
+
+//     sk = Math.floor(Math.random() * n) + 1;
+//     spejimai = 0;
+
+//     do {
+//       spejimas = parseInt(prompt(`Atspekite mano skaiciu nuo 1 iki ${n}: `));
+//       spejimai += 1;
+
+//       if (spejimas < 1 || spejimas > n || isNaN(spejimas)) {
+//         console.log(`Spejimas turi buti nuo 1 iki ${n}.`);
+//       } else if (spejimas < sk) {
+//         console.log(`Mano skaicius didesnis uz ${spejimas}.`);
+//       } else if (spejimas > sk) {
+//         console.log(`Mano skaicius mazesnis uz ${spejimas}.`);
+//       } else {
+//         console.log(
+//           `Sveikiname! Atspejote skaiciu ${sk} per ${spejimai} spejimus.`
+//         );
+//         break;
+//       }
+//     } while (true);
+
+//     kartot = prompt("Ar norite zaisti dar karta? (t/n): ");
+//   } while (kartot === "t" || kartot === "T");
+
+//   console.log("Aciu, kad zaidet!");
+// }
+
+// zaidimas();
+
+// let sk = 1;
+// do {
+//   console.log(sk);
+//   sk += 1;
+// } while (sk < 10);
+
+// let sk1 = 1;
+// do {
+//   console.log(sk1 ** 2);
+//   sk1 += 1;
+// } while (sk1 < 10);
+
+// let sk2 = 10;
+
+// do {
+//   if (sk2 % 2 === 0) {
+//     console.log(sk2);
+//   }
+//   sk2 += 1;
+// } while (sk2 < 100);
+
+// let i = 10;
+// for (i % 2 === 0; ++i < 100; ) {
+//   console.log(i);
+//   i += 1;
+// }
+
+// for (let i = 10; i < 100; i += 2) {
+//   console.log(i);
+// }
+
+// let sk3 = prompt(`Iveskite savo skaiciu atspausdinsiu visus iki jo:... `);
+// let skk3 = 1;
+
+// do {
+//   console.log(skk3);
+//   skk3 += 1;
+// } while (skk3 < sk3);
+
+// let sk1 = parseInt(
+//   prompt("Iveskite skaiciu kiek kartu norite atspausdinti varda.")
+// );
+// let user = prompt("Parasykite savo varda:... ");
+// let sk2 = 1;
+
+// do {
+//   console.log(user);
+//   sk2 += 1;
+// } while (sk2 <= sk1);
+
+// let sk = prompt("Iveskite kurio skaiciaus daugybos lenteles noryte.");
+
+// for (let i = 1; i <= 10; i++) {
+//   console.log(`${sk} * ${i} = ${sk * i}`);
+// }
+
+// for (let x = -10; x < 10; x++) {
+//   console.log(`y = ${7 * 2 + 5 * x - 3}`);
+// }
+
+// const kiek = 5;
+// let totalAukstumai = 0;
+
+// for (let i = 0; i < kiek; i++) {
+//   const aukst = parseInt(prompt(`Iveskite eglutes auksti #${i + 1}:`));
+//   totalAukstumai += aukst;
+//   console.log(`Eglutes aukstis #${i + 1}: ${aukst}`);
+// }
+
+// const averageAukstumai = totalAukstumai / kiek;
+// console.log(`Vidutinis egluciu aukstis: ${averageAukstumai}`);
+
+// Pirma uzduotis
+
+// const skaiciai = [1, 5, 98, 45, 65, 15];
+// const naujiSkaiciai = skaiciai.filter((el, index) => {
+//   return el > 0;
+// });
+
+// for (let i = 0; i < naujiSkaiciai.length; i++) {
+//   console.log(naujiSkaiciai[i]);
+// }
+
+// antra uzduotis vienas budas.
+
+// const sk1 = [1, 5, 98, 45, 65, 15];
+// let sum = 0;
+// for (let i = 0; i < skaiciai.length; i++) {
+//   sum += skaiciai[i];
+// }
+// console.log("suma loop", sum);
+
+// antra uzduotis antras budas.
+
+// const skaiciai1 = [1, 5, 98, 45, 65, 15];
+// const sumReduce = skaiciai1.reduce(
+//   (accumulator, currentValue) => accumulator + currentValue,
+//   0
+// );
+
+// console.log("suma naudojant reduce:", sumReduce);
+
+// antra uzduotis trecias budas.
+
+// const skaiciai2 = [1, 5, 98, 45, 65, 15];
+// let sumForEach = 0;
+
+// skaiciai2.forEach((number) => {
+//   sumForEach += number;
+// });
+
+// console.log("suma naudojant forEach:", sumForEach);
+
+// trecia uzduotis
+
+// const sakinys =
+//   "Saule spindi, zole zaliuoja, pauksciai dainuoja, o sunys cia loja.";
+// const zodziuMasyvas = sakinys.split(" ");
+// const lyginiuIndeksuMasyvas = [];
+// const nelyginiuIndeksuMasyvas = [];
+
+// zodziuMasyvas.forEach((zodis, indeks) => {
+//   if (indeks % 2 === 0) {
+//     lyginiuIndeksuMasyvas.push(zodis);
+//   } else {
+//     nelyginiuIndeksuMasyvas.push(zodis);
+//   }
+// });
+// const sakinysLyginiai = lyginiuIndeksuMasyvas.join(" ");
+// const sakinysNelyginiai = nelyginiuIndeksuMasyvas.join(" ");
+
+// console.log("Sakinys su lyginiais indeksais:", sakinysLyginiai);
+// console.log("Sakinys su nelyginiais indeksais:", sakinysNelyginiai);
+
+// ketvirta uzduotis
+
+// let myArray = [11, 30, 5, 7, 11, 10];
+// let minNum = Math.min(...myArray);
+// console.log(minNum);
+// let minNumIndex = myArray.indexOf(minNum);
+// console.log(minNumIndex);
+// myArray.splice(minNumIndex, 3);
+// console.log(myArray);
+
+// pirma uzduotis
+
+// const automobiliai = [`bmw`, `audi`, `mb`, `ford`];
+// automobiliai.push(`bentley`);
+// console.log(automobiliai);
+// console.log(automobiliai.indexOf(`bentley`));
+
+// antra uzduotis
+
+const prekes = [
+  "morka",
+  "agurkas",
+  "bananas",
+  "cukinija",
+  "baklazanas",
+  "morka",
+  "bananas",
+];
+
+const unikaliosPrekes = [];
+for (const preke of prekes) {
+  if (unikaliosPrekes.indexOf(preke) === -1) {
+    unikaliosPrekes.push(preke);
+  }
+}
+console.log(unikaliosPrekes);
+
+// trecia uzduotis
+
+const vaisiai = ["bananas", "obuolys", "slyva", "kriausia", "kyvis"];
+
+const unikalusvaisiai = [];
+for (let vaisius of vaisiai) {
+  if (!unikalusvaisiai.includes(vaisius)) {
+    unikalusvaisiai.push(vaisius);
+  }
+}
+console.log(unikalusvaisiai);
+
+// ketvirta uzduotis
+
+const skaiciai = [4, 6, 13, 69, 77];
+const sk = skaiciai.map((el) => (el % 2 === 0 ? `Panama` : el));
+const didziosios = sk.map((el) =>
+  typeof el === `string` ? el.toUpperCase() : el
+);
+console.log(didziosios);
