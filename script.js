@@ -1,4 +1,5 @@
 /** @format */
+"use strict";
 // UZDUOTIS NR 1
 // let pasisveikinimas = hello();
 // console.log(pasisveikinimas);
@@ -290,7 +291,6 @@
 //   console.log(message);
 // }
 
-"use strict";
 // const tekstas = "Tautvydas kreivys ";
 // const str = "Petras petraitis";
 // const together = tekstas.concat(str);
@@ -672,41 +672,324 @@
 
 // antra uzduotis
 
-const prekes = [
-  "morka",
-  "agurkas",
-  "bananas",
-  "cukinija",
-  "baklazanas",
-  "morka",
-  "bananas",
-];
+// const prekes = [
+//   "morka",
+//   "agurkas",
+//   "bananas",
+//   "cukinija",
+//   "baklazanas",
+//   "morka",
+//   "bananas",
+// ];
 
-const unikaliosPrekes = [];
-for (const preke of prekes) {
-  if (unikaliosPrekes.indexOf(preke) === -1) {
-    unikaliosPrekes.push(preke);
-  }
+// const unikaliosPrekes = [];
+// for (const preke of prekes) {
+//   if (unikaliosPrekes.indexOf(preke) === -1) {
+//     unikaliosPrekes.push(preke);
+//   }
+// }
+// console.log(unikaliosPrekes);
+
+// // trecia uzduotis
+
+// const vaisiai = ["bananas", "obuolys", "slyva", "kriausia", "kyvis"];
+
+// const unikalusvaisiai = [];
+// for (let vaisius of vaisiai) {
+//   if (!unikalusvaisiai.includes(vaisius)) {
+//     unikalusvaisiai.push(vaisius);
+//   }
+// }
+// console.log(unikalusvaisiai);
+
+// // ketvirta uzduotis
+
+// const skaiciai = [4, 6, 13, 69, 77];
+// const sk = skaiciai.map((el) => (el % 2 === 0 ? `Panama` : el));
+// const didziosios = sk.map((el) =>
+//   typeof el === `string` ? el.toUpperCase() : el
+// );
+// console.log(didziosios);
+
+// let rands = [];
+// const atsitiktiniai = (count, min, max) => {
+//   while (rands.length < count) {
+//     const r = Math.floor(Math.random() * (max - min + 1)) + min;
+//     rands.push(r);
+//   }
+//   console.log(rands);
+//   return rands;
+// };
+// atsitiktiniai(30, 5, 25);
+
+// for (let a = 0; a < 9; a++) {
+//   const naujas = Math.floor(Math.random() * (25 - 5) + 5);
+//   rands.push(naujas);
+// }
+// console.log(rands);
+
+// const sk = rands.filter((el, index) => el > 10);
+// console.log(sk);
+// console.log(sk.length);
+
+// const maxValue = Math.max(...rands);
+// const index = [];
+// for (let i = 0; i < rands.length; i++) {
+//   if (rands[i] === maxValue) {
+//     index.push(i);
+//   }
+// }
+// console.log(`didziausias skaicius yra ${maxValue} jo indeksas yra ${index}`);
+
+// const maxValue = Math.max(...rands);
+// const indexx = [];
+// console.log(rands);
+// const index = rands.forEach((el, index) =>
+//   el === maxValue ? indexx.push(index) : null
+// );
+// console.log(indexx);
+
+// const indexx = [];
+// console.log(rands);
+// const index = rands.reduce(
+//   (accumulator, currentValue, currentIndex) =>
+//     currentIndex % 2 === 0 ? accumulator + currentValue : accumulator,
+//   0
+// );
+// console.log(index);
+
+// const randsInd = [];
+// console.log(rands);
+// const index = rands.forEach((el, index) => randsInd.push(el - index));
+// console.log(randsInd);
+
+// console.log(rands);
+// const randsInd = rands.map((el, index) => el - index);
+// console.log(randsInd);
+
+// for (let i = 1; i <= 10; i++) {
+//   rands.push(Math.floor(randInt(5, 26)));
+// }
+// console.log(rands);
+
+// // f
+
+// let evens = rands.filter((num, index) => index % 2 == 0);
+// let odds = rands.filter((num, index) => index % 2 != 0);
+// console.log(evens);
+// console.log(odds);
+
+// // g
+
+// let didesniUz15 = rands.map((num, index) =>
+//   index52 == 0 && num > 15 ? "nulis" : num
+// );
+// console.log(didesniUz15);
+
+// // h
+
+// const didesnisUz10 = (num) => num > 10;
+
+// console.log(rands.findIndex(didesnisUz10));
+
+// let duomenys = {
+//   id: "0001",
+//   type: "donut",
+//   name: "Cake",
+//   ppu: 0.55,
+//   topping: [
+//     { id: "5001", type: "None" },
+//     { id: "5002", type: "Glazed" },
+//     { id: "5005", type: "Sugar" },
+//     { id: "5007", type: "Powdered Sugar" },
+//     { id: "5006", type: "Chocolate with Sprinkles" },
+//     { id: "5003", type: "Chocolate" },
+//     { id: "5004", type: "Maple" },
+//   ],
+// };
+// const masyvas = duomenys.topping;
+// console.log(masyvas);
+// masyvas.forEach((el) => console.log(`id : ${el.id}, type : ${el.typer}`));
+// const masyvas2 = duomenys.topping.forEach((el) => {
+//   Object.entries(duomenys).forEach(([key, value]) => console.log(key, value));
+// });
+
+// const family = {
+//   grandparents: {
+//     grandma: "Marge",
+//     grandpa: "Homer",
+//   },
+//   parents: {
+//     mom: "Lisa",
+//     dad: "Millhouse",
+//   },
+//   children: {
+//     dauhter: "Anne",
+//     son1: "Peter",
+//     son2: "Bob",
+//   },
+// };
+
+// for (let i in family) {
+//   let line = i + ": ";
+//   let values = Object.values(family[i]);
+//   line += values.join(", ");
+//   console.log(line);
+// }
+
+// const family = {
+//   grandparents: {
+//     grandma: "Marge",
+//     grandpa: "Homer",
+//   },
+//   parents: {
+//     mom: "Lisa",
+//     dad: "Millhouse",
+//   },
+//   children: {
+//     dauhter: "Anne",
+//     son1: "Peter",
+//     son2: "Bob",
+//   },
+// };
+
+// for (let category in family) {
+//   let line = category + ": ";
+//   let members = family[category];
+//   let values = [];
+
+//   for (let member in members) {
+//     values.push(members[member]);
+//   }
+
+//   line += values.join(", ");
+//   console.log(line);
+// }
+
+// let knygos = [
+//   {
+//     isbn: 9786098233346,
+//     price: 7.99,
+//     year: 2006,
+//     title: "Bloga dukte",
+//     pagecount: 250,
+//   },
+//   {
+//     isbn: 9786098233391,
+//     price: 7.99,
+//     year: 2015,
+//     title: "Mergina kuria jis pazinojo",
+//     pagecount: 315,
+//   },
+//   {
+//     isbn: 9786099609324,
+//     price: 7.99,
+//     year: 2019,
+//     title: "Tapk ragana",
+//     pagecount: 150,
+//   },
+//   {
+//     isbn: 9786094792250,
+//     price: 6.99,
+//     year: 2007,
+//     title: "Sfera",
+//     pagecount: 450,
+//   },
+//   {
+//     isbn: 9786094792335,
+//     price: 9.99,
+//     year: 2019,
+//     title: "Mes susitinkame cia",
+//     pagecount: 500,
+//   },
+//   {
+//     isbn: 9786094273780,
+//     price: 7.99,
+//     year: 2019,
+//     title: "Sunaikinimas",
+//     pagecount: 509,
+//   },
+//   {
+//     isbn: 9786098233483,
+//     price: 12.99,
+//     year: 2018,
+//     title: "Artemide",
+//     pagecount: 199,
+//   },
+//   {
+//     isbn: 9786094273872,
+//     price: 4.99,
+//     year: 2015,
+//     title: "Fondas ir imperija",
+//     pagecount: 185,
+//   },
+//   {
+//     isbn: 9786094273902,
+//     price: 7.99,
+//     year: 2019,
+//     title: "Amzinybes fjordo pranasai",
+//     pagecount: 333,
+//   },
+//   {
+//     isbn: 9786094442742,
+//     price: 5.99,
+//     year: 2004,
+//     title: "Bejegiai",
+//     pagecount: 777,
+//   },
+//   {
+//     isbn: 9786094442940,
+//     price: 14.99,
+//     year: 2019,
+//     title: "Klajunai",
+//     pagecount: 172,
+//   },
+//   {
+//     isbn: 9786090404386,
+//     price: 7.99,
+//     year: 2015,
+//     title: "Mergina, kuri pakliuvo i voratinkli",
+//     pagecount: 356,
+//   },
+// ];
+// let masyvas = [];
+// for (let i in knygos) {
+//   if (knygos[i].year > 2015) {
+//     masyvas.push(knygos[i].title);
+//   }
+//   for (let a in knygos[i]) {
+//     console.log(`${a} --> ${knygos[i][a]}`);
+//   }
+// }
+// console.log(masyvas);
+
+let moketa = [25, 60, 240];
+let arbata2 = [];
+let total2 = [];
+function arbatpinigiai(moketa) {
+  moketa.forEach((element) => {
+    let arbata = 0;
+    let total = 0;
+    if (element < 50) {
+      arbata = element * 0.2;
+      total = arbata + element;
+      //   arbata2.push(arbata);
+      //   total2.push(total);
+    } else if (50 <= element && element < 200) {
+      arbata = element * 0.15;
+      total = arbata + element;
+      //   arbata2.push(arbata);
+      //   total2.push(total);
+    } else {
+      arbata = element * 0.1;
+      total = arbata + element;
+      //   arbata2.push(arbata);
+      //   total2.push(total);
+    }
+    arbata2.push(arbata);
+    total2.push(total);
+  });
 }
-console.log(unikaliosPrekes);
-
-// trecia uzduotis
-
-const vaisiai = ["bananas", "obuolys", "slyva", "kriausia", "kyvis"];
-
-const unikalusvaisiai = [];
-for (let vaisius of vaisiai) {
-  if (!unikalusvaisiai.includes(vaisius)) {
-    unikalusvaisiai.push(vaisius);
-  }
-}
-console.log(unikalusvaisiai);
-
-// ketvirta uzduotis
-
-const skaiciai = [4, 6, 13, 69, 77];
-const sk = skaiciai.map((el) => (el % 2 === 0 ? `Panama` : el));
-const didziosios = sk.map((el) =>
-  typeof el === `string` ? el.toUpperCase() : el
-);
-console.log(didziosios);
+arbatpinigiai(moketa);
+console.log(arbata2);
+console.log(total2);
